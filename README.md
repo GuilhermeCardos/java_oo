@@ -24,3 +24,4 @@ Curso básico sobre a programação Orientada a Objetos
 ## 🚀 Sobre mim
 Eu sou uma pessoa desenvolvedora full-stack...
 
+git

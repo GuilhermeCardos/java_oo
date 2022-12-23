@@ -22,6 +22,20 @@ public class Main {
 		segundaConta.titular = "Karollinny Cardoso";
 		
 		System.out.println(segundaConta.titular+"Segunda Conta: "+ segundaConta.saldo);
+		
+		
+		// teste de referência
+		
+		System.out.println(primeiraConta); // conta.Conta@368102c8
+		
+		System.out.println(segundaConta); // conta.Conta@6996db8
+		
+		if(primeiraConta == segundaConta) 
+		{	System.out.println(true); }
+		
+		else 
+		{	System.out.println(false);}
+		
 	}
 
 }
