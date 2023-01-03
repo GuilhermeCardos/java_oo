@@ -1,6 +1,6 @@
 package main;
 
-import conta.Conta;
+import classes.Conta;
 
 public class TesteReferencias {
 

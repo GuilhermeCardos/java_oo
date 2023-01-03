@@ -1,40 +1,48 @@
 package main;
 
-import conta.Conta;
+import classes.Conta;
+import classes.Cliente;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
 		Conta primeiraConta = new Conta();
+		primeiraConta.saldo = 300;
 		
-		primeiraConta.saldo = 200;
-		primeiraConta.saldo += 100;
-		primeiraConta.titular="Guilherme Cardoso";
+		Cliente guilherme = new Cliente();
+		guilherme.nome ="Guilherme Cardoso";
+		primeiraConta.titular = guilherme;
 		
-		System.out.println("Primeira Conta: "+primeiraConta.saldo);
+		System.out.println("Primeira Conta: "+ primeiraConta.titular.nome);
 		
-		
+		//------------ Conta | Cliente -----------------
 		Conta segundaConta = new Conta();
+		Cliente karol = new Cliente();
 		
+		karol.nome="Karollinny";
 		segundaConta.saldo = 50;
 		segundaConta.saldo *= 10;
-		segundaConta.titular = "Karollinny Cardoso";
+		segundaConta.titular = karol;
 		
-		System.out.println(segundaConta.titular+"Segunda Conta: "+ segundaConta.saldo);
+		System.out.println("Segunda Conta: "+ segundaConta.saldo);
 		
 		
 		// teste de referência
 		
-		System.out.println(primeiraConta); // conta.Conta@368102c8
+		System.out.println("------------ Teste De Referencia ---------------");
 		
-		System.out.println(segundaConta); // conta.Conta@6996db8
+		System.out.println(primeiraConta.titular); // conta.Conta@368102c8
+		System.out.println(guilherme);
 		
-		if(primeiraConta == segundaConta) 
+		System.out.println(segundaConta.titular); // conta.Conta@6996db8
+		System.out.println(karol);
+		
+		
+		/* if(primeiraConta == segundaConta) 
 		{	System.out.println(true); }
-		
 		else 
-		{	System.out.println(false);}
+		{	System.out.println(false);}	*/
 		
 	}
 

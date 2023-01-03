@@ -1,6 +1,7 @@
 package main;
 
-import conta.Conta;
+import classes.Conta;
+//import classes.Cliente;
 
 public class TestandoMetodos {
 	
@@ -16,12 +17,12 @@ public class TestandoMetodos {
 		
 		//ATRIBUTOS - PAULO
 		contaPaulo.saldo = 1500;
-		contaPaulo.titular="Paulo Silva";
+		/*contaPaulo.titular="Paulo Silva";*/
 		contaPaulo.nu_agencia = 0.001;
 		
 		//ATRIBUTOS - MARCELA
 		contaMarcela.saldo=2000;
-		contaMarcela.titular ="Marcela Reis";
+		/*contaMarcela.titular ="Marcela Reis";*/
 		contaMarcela.nu_agencia = 0.002;
 
 		
